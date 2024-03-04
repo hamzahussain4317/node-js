@@ -1,0 +1,38 @@
+basically our web pages is store somewhere in the server or it code is store somewhere when 
+you open that webpage its code loads from there the browser is just like our interpreter that gets back certain source
+code when we request for data through http the data is encrypted between browser and the server
+javascript code is only understand by the browser and the goofle engine provide v8 engine written in c++
+which understands js code and run it node js is written in c++
+a server side language can read and write files on computer also connects to a database and act as a server of content
+
+global objects of javascript all of them have their own methods attributes etc.
+1)window
+settimeout is the method of window object thats why we dont write window.settimeout instead it we use just settimeout
+
+
+                                                                 node js introduction
+what if we want to link two js file we can do by using the code
+const xyz=require('./people')
+it can run the code on file people but cannot acces the things created in people like if we create an aray in people we cannot console.log(people) in this file
+so for that we have to import tat thing in people file and in this case xyz contain that people array
+otherwise it contain an empty object
+ 
+                                                                file system in node js
+read file: for reading a file in js we have a method of a readfile('file name proper path',callback function that do something when it works)	
+remember that reding a file is a async function that always been run asynchoronsly
+
+write to a file: for writing a file in js we have a method of a writefile('file name proper path','content we want to write,call function that runs asynchoronsly
+after it writes the content into the file)
+remember that writing to a file is a async function that always been run asynchoronsly
+
+streams: starts using data before the file fully being read 
+the good example of a stream is a youtube video means that the we can see video without full been loaded means that we donot wait to video to been fully load 
+
+                                                                Server side js
+request: what browser send to the server
+response: what server send back to the browser
+for example when we give a website name to the browser then the browser request to the server through the following IP and the in the response the server loads the
+website that communication between a server and a brwoser is thorugh a HTTP 
+when you access web through its IP address your own computer acts as a localhost
+localhost: is nothing but just a domain name of the web
+port number: is nothing but your computer door through which internet communication is made
